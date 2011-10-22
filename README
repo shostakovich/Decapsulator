@@ -1,2 +1,4 @@
+InspectorProxy
+==============
 
-This file was modified by JetBrains PhpStorm (PhpStorm) PS-110.122 for binding GitHub repository
+InspectorProxy exposes protected + private methods and properties.
