@@ -1,6 +1,6 @@
 <?php
 require_once("./lime.php");
-require_once("./InspectorProxy.php");
+require_once("../InspectorProxy.php");
 require_once("./TestSubject.php");
 
 $subject = new TestSubject();
