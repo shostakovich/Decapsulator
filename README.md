@@ -6,8 +6,8 @@ What is Decapsulator?
 
 Decapsulator allows you to access private and protected properties from within your tests.
 
-How does it work?
------------------
+It behaves like the decapsulated object!
+----------------------------------------
 
 I wanted that Decapsulator has a very unspectacular interface. So I used PHP's magic methods.
 Decapsulator just feels like accessing public methods/properties on the Object in decapsulates.
@@ -34,10 +34,10 @@ $decapsulated_subject->secret_sauce;
 </pre>
 ```
 
-Is there a drawback?
---------------------
+Really exactly?
+---------------
 
-Yes. Currently Decapsulator has a quite verbose Syntax for accessing static methods/properties.
+Ok - i lied ;) Currently Decapsulator has a quite verbose Syntax for accessing static methods/properties.
 
 ```php
 <?php
@@ -55,7 +55,8 @@ $decapsulated_subject->getStatic("secret_sauce");
 </pre>
 ```
 
-When should I not use this?
----------------------------
+When should I not use Decapsulation
+-----------------------------------
 
-Do yourself a favor and do not use it to fight against bad design. Its not made for use in production!
+Do yourself a favor and do not use it to fight against bad design.
+Reflection on every call is not made for use in production..
