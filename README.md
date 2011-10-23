@@ -31,7 +31,6 @@ $decapsulated_subject = new Decapsulator($subject);
 $decapsulated_subject->doSomething();
 $decapsulated_subject->secret_sauce;
 ?>
-</pre>
 ```
 
 Really exactly?
@@ -52,7 +51,6 @@ $subject = new Subject();
 $decapsulated_subject = new Decapsulator($subject);
 $decapsulated_subject->getStatic("secret_sauce");
 ?>
-</pre>
 ```
 
 When should I not use Decapsulation
