@@ -12,12 +12,24 @@ class Decapsulator
 
   public function __set($name, $value)
   {
-    $this->setProperty($name, $value);
+   try{
+     $this->setProperty($name, $value);
+   }
+   catch(ReflectionException $e)
+   {
+     $this->subject->$name = $value;
+   }
   }
 
   public function __get($name)
   {
-    return $this->getProperty($name);
+    try{
+      return $this->getProperty($name);
+    }
+    catch(ReflectionException $e)
+    {
+      return NULL;
+    }
   }
 
   public function __call($name, $params)
